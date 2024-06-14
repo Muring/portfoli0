@@ -1,0 +1,20 @@
+.header {
+  height: 12vh;
+  padding: 0 10vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu {
+    display: flex;
+    gap: 5vw;
+  }
+
+  a:hover {
+    text-decoration: none;
+    opacity: 50%;
+    transition-duration: 0.3s;
+  }
+}
