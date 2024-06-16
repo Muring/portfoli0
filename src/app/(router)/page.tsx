@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <div className={styles[`main-container`]}>
       <header className={styles.header}>
         <Link href={`/`}>
           <Image src={"/logo.png"} width={75} height={75} alt="logo"></Image>
@@ -34,14 +34,13 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <div>
+      <div className={styles[`content-container`]}>
         <h1>안녕하세요</h1>
         <h2>안녕하세요</h2>
         <h3>안녕하세요</h3>
         <p>안녕하세요</p>
       </div>
-      <div></div>
       <footer></footer>
-    </main>
+    </div>
   );
 }
