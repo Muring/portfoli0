@@ -1,5 +1,6 @@
 .header {
   height: 12vh;
+  min-height: 100px;
   padding: 0 10vw;
   background-color: black;
   color: white;
@@ -10,11 +11,5 @@
   .menu {
     display: flex;
     gap: 5vw;
-  }
-
-  a:hover {
-    text-decoration: none;
-    opacity: 50%;
-    transition-duration: 0.3s;
   }
 }

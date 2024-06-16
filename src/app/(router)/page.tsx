@@ -12,21 +12,34 @@ export default function Home() {
         <nav>
           <ul className={styles.menu}>
             <li>
-              <Link href={"/about"}>about</Link>
+              <Link href={"/about"}>
+                <p>about</p>
+              </Link>
             </li>
             <li>
-              <Link href={"/portfolio"}>portfolio</Link>
+              <Link href={"/portfolio"}>
+                <p>portfolio</p>
+              </Link>
             </li>{" "}
             <li>
-              <Link href={"https://muring.vercel.app"}>blog</Link>
+              <Link href={"https://muring.vercel.app"}>
+                <p>blog</p>
+              </Link>
             </li>{" "}
             <li>
-              <Link href={"/contact"}>contact</Link>
+              <Link href={"/contact"}>
+                <p>contact</p>
+              </Link>
             </li>
           </ul>
         </nav>
       </header>
-      <div></div>
+      <div>
+        <h1>안녕하세요</h1>
+        <h2>안녕하세요</h2>
+        <h3>안녕하세요</h3>
+        <p>안녕하세요</p>
+      </div>
       <div></div>
       <footer></footer>
     </main>
