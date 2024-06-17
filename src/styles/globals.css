@@ -141,11 +141,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  opacity: 50%;
-  transition-duration: 0.3s;
-}
-
 /* font */
 
 h1 {
@@ -157,11 +152,15 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.5rem, 3vw, 1.5rem);
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
 }
 
 h3 {
-  font-size: clamp(1.25rem, 2.5vw, 1.25rem); /* h3 태그 추가 */
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 1.25rem);
 }
 
 p {

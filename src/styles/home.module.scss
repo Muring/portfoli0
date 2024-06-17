@@ -8,6 +8,11 @@
     height: 50vw;
     max-height: 80vh;
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* 아래쪽에만 그림자 효과 */
+
+    a:hover {
+      opacity: 50%;
+      transition-duration: 0.3s;
+    }
   }
 
   .recent {
@@ -37,10 +42,10 @@
 
     .card-container {
       display: grid;
-      gap: 2vw;
+      gap: 2.5vw;
       grid-auto-rows: 1fr;
       overflow: hidden; /* 초과 요소 숨기기 */
-      padding-top: 4vh;
+      padding: 4vh 1vw;
       transition: 0.3s;
 
       /* 기본적으로 1개씩 배치 */
