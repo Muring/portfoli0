@@ -7,10 +7,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transform: translateY(-100%);
+  opacity: 0;
 
   .menu {
     display: flex;
     gap: 3vw;
+  }
+
+  &.drop {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 1s ease;
   }
 
   @media (min-width: 600px) {
@@ -25,4 +33,7 @@
     opacity: 50%;
     transition: all 0.3s ease;
   }
+}
+
+.drop {
 }

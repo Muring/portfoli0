@@ -1,10 +1,21 @@
+"use client";
+
 import styles from "@/styles/header.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [animationTriggered, setAnimationTriggered] = useState(false);
+
+  useEffect(() => {
+    setAnimationTriggered(true);
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${animationTriggered ? styles.drop : ""}`}
+    >
       <Link href={`/`}>
         <Image src={"/logo.png"} width={75} height={75} alt="logo"></Image>
       </Link>
