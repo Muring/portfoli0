@@ -17,12 +17,12 @@
     /* 화면 너비가 600px 이상일 때 갭 바꾸기 */
     .menu {
       gap: 5vw;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
   }
 
   a:hover {
     opacity: 50%;
-    transition: 0.3s;
+    transition: all 0.3s ease;
   }
 }
