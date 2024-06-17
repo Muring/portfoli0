@@ -9,7 +9,22 @@
   .box {
     align-items: center;
     font-size: 2em;
-    transition: all 0.3s ease;
+    transition: flex 0.1s ease, opacity 0.1s ease;
+  }
+
+  .left {
+    transform: translateX(-100%);
+    background-color: antiquewhite;
+  }
+
+  .right {
+    transform: translateX(100%);
+    background-color: aquamarine;
+  }
+
+  .to-center {
+    transform: translateX(0%);
+    transition: all 1s ease-out;
   }
 
   .description {
@@ -18,7 +33,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 5vw;
-    top: 30vw;
+    top: 20vw;
     min-width: 240px;
 
     h1 {
@@ -38,12 +53,12 @@
     }
   }
 
-  .left {
+  .left-description {
     text-align: left;
     left: 0;
   }
 
-  .right {
+  .right-description {
     text-align: right;
     right: 0;
   }
