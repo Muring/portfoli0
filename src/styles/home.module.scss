@@ -51,7 +51,7 @@
     }
 
     @media (min-width: 500px) {
-      /* 화면 너비가 400px 이상일 때 2개씩 배치 */
+      /* 화면 너비가 500px 이상일 때 2개씩 배치 */
       .card-container {
         grid-template-columns: repeat(2, 1fr);
         max-height: calc(
