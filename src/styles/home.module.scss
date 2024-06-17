@@ -1,20 +1,73 @@
-.header {
-  height: 12vh;
-  min-height: 100px;
-  padding: 0 10vw;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .menu {
-    display: flex;
-    gap: 5vw;
-  }
-}
-
 .content-container {
-  background-color: red;
-  height: 85vh;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+
+  .slide-container {
+    display: flex;
+    height: 50vw;
+    max-height: 80vh;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* 아래쪽에만 그림자 효과 */
+  }
+
+  .recent {
+    display: flex;
+    flex-direction: column;
+    padding: 10vw 5vw;
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .line {
+        flex-grow: 1;
+        height: 1px;
+        background-color: #ccc;
+      }
+
+      .title {
+        margin: 0 20px;
+        font-weight: bold;
+        color: #777;
+        white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+      }
+    }
+
+    .card-container {
+      display: grid;
+      gap: 2vw;
+      grid-auto-rows: 1fr;
+      overflow: hidden; /* 초과 요소 숨기기 */
+      padding-top: 4vh;
+      transition: 0.3s;
+
+      /* 기본적으로 1개씩 배치 */
+      grid-template-columns: 1fr;
+      max-height: calc(
+        3 * (100vw - 20px) / 1
+      ); /* 3개의 박스를 보여줄 높이 설정 */
+    }
+
+    @media (min-width: 500px) {
+      /* 화면 너비가 400px 이상일 때 2개씩 배치 */
+      .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-height: calc(
+          (75vw / 2) - 20px
+        ); /* 1행으로 2개의 박스만 보여줄 높이 설정 */
+      }
+    }
+
+    @media (min-width: 800px) {
+      /* 화면 너비가 800px 이상일 때 3개씩 배치 */
+      .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        max-height: calc(
+          (120vw / 3) - 20px
+        ); /* 1행으로 3개의 박스를 보여줄 높이 설정 */
+      }
+    }
+  }
 }

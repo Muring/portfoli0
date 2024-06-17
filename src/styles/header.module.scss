@@ -1,0 +1,23 @@
+.header {
+  height: 12vh;
+  min-height: 100px;
+  padding: 0 10vw;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .menu {
+    display: flex;
+    gap: 3vw;
+  }
+
+  @media (min-width: 600px) {
+    /* 화면 너비가 400px 이상일 때 2개씩 배치 */
+    .menu {
+      gap: 5vw;
+      transition: 0.3s;
+    }
+  }
+}

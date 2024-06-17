@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: #cdcdcd;
+  padding: 2vh 8vw;
+  color: #5a5a5a;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
