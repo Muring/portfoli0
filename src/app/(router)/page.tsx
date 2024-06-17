@@ -1,17 +1,11 @@
+import HomeSelection from "@/components/HomeSelection";
 import ProjectCard from "@/components/ProjectCard";
 import styles from "@/styles/home.module.scss";
 
 export default function Home() {
   return (
     <div className={styles[`content-container`]}>
-      <div className={styles[`slide-container`]}>
-        <div className={styles[`left-slide`]}>
-          <h1>About me</h1>
-        </div>
-        <div className={styles[`right-slide`]}>
-          <h1>Projects</h1>
-        </div>
-      </div>
+      <HomeSelection />
       <div className={styles.recent}>
         <div className={styles[`title-container`]}>
           <div className={styles.line}></div>

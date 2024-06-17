@@ -144,6 +144,8 @@ a {
 /* font */
 
 h1 {
+  margin-bottom: 1vw;
+  font-weight: bolder;
   font-size: clamp(
     2rem,
     4vw,

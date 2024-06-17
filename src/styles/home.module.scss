@@ -3,14 +3,6 @@
   display: flex;
   flex-direction: column;
 
-  .slide-container {
-    display: flex;
-    justify-content: space-between;
-    height: 50vw;
-    max-height: 80vh;
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* 아래쪽에만 그림자 효과 */
-  }
-
   .recent {
     display: flex;
     flex-direction: column;

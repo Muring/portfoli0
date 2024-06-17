@@ -1,0 +1,50 @@
+.slide-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50vw;
+  max-height: 80vw;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* 아래쪽에만 그림자 효과 */
+  transition: all 0.3s ease;
+
+  .box {
+    align-items: center;
+    font-size: 2em;
+    transition: all 0.3s ease;
+  }
+
+  .description {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5vw;
+    top: 30vw;
+    min-width: 240px;
+
+    h1 {
+      font-size: max(4vw, 2rem);
+    }
+
+    p {
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    @media (min-width: 550px) {
+      /* 화면 너비가 500px 이상일 때 2개씩 배치 */
+      p {
+        opacity: 1;
+      }
+    }
+  }
+
+  .left {
+    text-align: left;
+    left: 0;
+  }
+
+  .right {
+    text-align: right;
+    right: 0;
+  }
+}
