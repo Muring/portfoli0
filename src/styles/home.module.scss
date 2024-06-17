@@ -38,7 +38,7 @@
 
     .card-container {
       display: grid;
-      gap: 2.5vw;
+      gap: 3vw;
       grid-auto-rows: 1fr;
       overflow: hidden; /* 초과 요소 숨기기 */
       padding: 4vh 1vw;
@@ -56,7 +56,7 @@
       .card-container {
         grid-template-columns: repeat(2, 1fr);
         max-height: calc(
-          (75vw / 2) - 20px
+          (70vw / 2) - 20px
         ); /* 1행으로 2개의 박스만 보여줄 높이 설정 */
       }
     }
