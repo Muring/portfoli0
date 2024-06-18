@@ -7,6 +7,9 @@
     display: flex;
     flex-direction: column;
     padding: 10vw 5vw;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
+    // transition: all 0.3s ease;
 
     .title-container {
       display: flex;
@@ -62,5 +65,14 @@
         ); /* 1행으로 3개의 박스를 보여줄 높이 설정 */
       }
     }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

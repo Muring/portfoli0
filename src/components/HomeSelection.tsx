@@ -3,6 +3,7 @@
 import styles from "@/styles/slider.module.scss";
 import { useState, MouseEvent, useEffect, useCallback, useRef } from "react";
 import { throttle } from "lodash";
+import Link from "next/link";
 
 export default function HomeSelection() {
   const [hoverPosition, setHoverPosition] = useState<number | null>(null);
@@ -40,7 +41,8 @@ export default function HomeSelection() {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      <div
+      <Link
+        href={"/about"}
         className={`${styles.box} ${styles.left} ${
           animationTriggered ? styles["to-center"] : ""
         }`}
@@ -50,9 +52,10 @@ export default function HomeSelection() {
           <h1>About me</h1>
           <p>Personality, Skills, Experience</p>
         </div>
-      </div>
+      </Link>
 
-      <div
+      <Link
+        href={"/portfolio"}
         className={`${styles.box} ${styles.right} ${
           animationTriggered ? styles["to-center"] : ""
         }`}
@@ -64,7 +67,7 @@ export default function HomeSelection() {
           <h1>Projects</h1>
           <p>Projects made with Vue & React</p>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
