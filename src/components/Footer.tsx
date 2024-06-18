@@ -1,9 +1,19 @@
+"use client";
+
 import styles from "@/styles/footer.module.scss";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
+  const [animationTriggered, setAnimationTriggered] = useState(false);
+
+  useEffect(() => {
+    setAnimationTriggered(true);
+  }, []);
   return (
-    <footer className={styles.footer}>
+    <footer
+      className={`${styles.footer} ${animationTriggered ? styles.pop : ""}`}
+    >
       <Link href={"/"} className={styles.info}>
         <p>&copy;2024 Eom SeHyeon</p>
       </Link>
@@ -31,6 +41,9 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
+      <Link href={"#top"} className={styles.top}>
+        back to top
+      </Link>
     </footer>
   );
 }
