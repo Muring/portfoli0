@@ -23,22 +23,22 @@ export default function Header() {
         <ul className={styles.menu}>
           <li>
             <Link href={"/about"}>
-              <h3>about</h3>
+              <h4>about</h4>
             </Link>
           </li>
           <li>
             <Link href={"/portfolio"}>
-              <h3>portfolio</h3>
+              <h4>portfolio</h4>
             </Link>
           </li>
           <li>
             <Link href={"https://muring.vercel.app"}>
-              <h3>blog</h3>
+              <h4>blog</h4>
             </Link>
           </li>
           <li>
             <Link href={"/contact"}>
-              <h3>contact</h3>
+              <h4>contact</h4>
             </Link>
           </li>
         </ul>

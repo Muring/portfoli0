@@ -1,14 +1,36 @@
 import styles from "@/styles/footer.module.scss";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.info}>
-        <p>Name: 엄세현</p>
-        <p>Phone: 010-2478-2335</p>
-        <p>E-mail: 11esh@naver.com</p>
-      </div>
-      <div className={styles.copyright}>&copy;Copyright by MuRing</div>
+      <Link href={"/"} className={styles.info}>
+        <p>&copy;2024 Eom SeHyeon</p>
+      </Link>
+      <nav className={styles.menu}>
+        <ul>
+          <li>
+            <Link href={"/about"}>
+              <p>about</p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/portfolio"}>
+              <p>portfolio</p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"https://muring.vercel.app"}>
+              <p>blog</p>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/contact"}>
+              <p>contact</p>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </footer>
   );
 }
