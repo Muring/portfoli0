@@ -7,6 +7,7 @@
   transition: all 0.3s ease;
 
   .box {
+    position: relative; /* 자식 가상 요소들이 부모를 기준으로 위치하도록 설정 */
     align-items: center;
     font-size: 2em;
     transition: flex 0.1s ease, opacity 0.1s ease;
@@ -18,8 +19,13 @@
   }
 
   .right {
+    color: white;
     transform: translateX(100%);
-    background-color: aquamarine;
+    background-image: url("/images/home/project-black.png");
+    background-size: 80vw 110%; /* 배경 이미지를 박스 크기에 맞게 조정 */
+    background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
+    background-position: right top; /* 배경 이미지를 중앙에 위치시킴 */
+    background-attachment: fixed; /* 배경 이미지 고정 */
   }
 
   .to-center {
@@ -34,7 +40,7 @@
     justify-content: center;
     padding: 0 5vw;
     top: 15vw;
-    min-width: 20vw;
+    min-width: 30vw;
 
     h1 {
       font-size: max(4vw, 2rem);
