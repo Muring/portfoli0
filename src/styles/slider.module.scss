@@ -19,9 +19,8 @@
   }
 
   .right {
-    color: white;
     transform: translateX(100%);
-    background-image: url("/images/home/project-black.png");
+    background-image: url("/images/home/project.png");
     background-size: 80vw 110%; /* 배경 이미지를 박스 크기에 맞게 조정 */
     background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
     background-position: right top; /* 배경 이미지를 중앙에 위치시킴 */
