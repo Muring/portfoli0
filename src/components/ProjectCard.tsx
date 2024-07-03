@@ -10,8 +10,8 @@ export default function ProjectCard({ project, type }: ProjectCardProps) {
       <Link href={`/protfolio/${currentProject.id}`}>
         <Image
           src={type === 0 ? project.bigImage : project.smallImage}
-          width={100}
-          height={100}
+          width={400}
+          height={400}
           alt="project image"
         ></Image>
         <div className={styles.description}>

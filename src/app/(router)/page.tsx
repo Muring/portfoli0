@@ -7,7 +7,7 @@ import fs from "fs";
 
 export default function Home() {
   // JSON 파일 가져오기
-  const filePath = path.join(process.cwd(), "public", "data", "project.json");
+  const filePath = path.join(process.cwd(), "public", "data", "main.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
   const projects: Project[] = JSON.parse(jsonData);
   // const projects: Project[] = require("/public/data/data.json");
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <div className={styles[`card-container`]}>
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} type={0} />
+            <ProjectCard key={project.id} project={project} type={1} />
           ))}
         </div>
       </div>

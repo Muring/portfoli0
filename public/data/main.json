@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Vita",
+    "description": "본인의 건강에 소홀한 현대인들을 위한 건강 촉진 앱",
+    "smallImage": "/images/vita/card2.png",
+    "bigImage": "/images/vita/card1.png"
+  },
+  {
+    "id": 2,
+    "name": "MOMO",
+    "description": "모임 통장과 그룹원들의 소통 창구인 피드를 결합한 모두를 위한 모임 뱅킹",
+    "smallImage": "/images/momo/card2.png",
+    "bigImage": "/images/momo/card1.png"
+  },
+  {
+    "id": 3,
+    "name": "SEAS",
+    "description": "컴퓨터 공학 지식 학습을 위한 CS 퀴즈 웹 페이지",
+    "smallImage": "/images/seas/card2.png",
+    "bigImage": "/images/seas/card1.png"
+  }
+]
