@@ -1,7 +1,7 @@
 import HomeSelection from "@/components/HomeSelection";
 import ProjectCard from "@/components/ProjectCard";
 import styles from "@/styles/home.module.scss";
-import { Project } from "../../../interfaces/project";
+import { Project } from "@/interfaces/project.interface";
 import path from "path";
 import fs from "fs";
 
@@ -10,8 +10,6 @@ export default function Home() {
   const filePath = path.join(process.cwd(), "public", "data", "main.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
   const projects: Project[] = JSON.parse(jsonData);
-  // const projects: Project[] = require("/public/data/data.json");
-  console.log(projects);
 
   return (
     <div className={styles[`content-container`]}>

@@ -1,7 +1,7 @@
 import styles from "@/styles/card.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import { ProjectCardProps } from "../../interfaces/project";
+import { ProjectCardProps } from "@/interfaces/project.interface";
 
 export default function ProjectCard({ project, type }: ProjectCardProps) {
   const currentProject = project;

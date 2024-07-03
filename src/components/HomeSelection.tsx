@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "@/styles/slider.module.scss";
-import { useState, MouseEvent, useEffect, useCallback, useRef } from "react";
+import { useState, MouseEvent, useEffect, useCallback } from "react";
 import { throttle } from "lodash";
 import Link from "next/link";
 

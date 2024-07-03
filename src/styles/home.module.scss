@@ -1,4 +1,5 @@
 .content-container {
+  min-width: 500px;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
@@ -9,7 +10,7 @@
     padding: 10vw 5vw;
     opacity: 0;
     animation: fadeIn 1s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
-    // transition: all 0.3s ease;
+    transition: all 0.3s ease;
 
     .title-container {
       display: flex;
@@ -33,10 +34,11 @@
 
     .card-container {
       display: grid;
-      gap: 3vw;
+      align-items: center;
+      gap: 2vw;
       grid-auto-rows: 1fr;
       overflow: hidden; /* 초과 요소 숨기기 */
-      padding: 4vh 1vw;
+      padding: 4vh 0;
       transition: 0.3s;
 
       /* 기본적으로 1개씩 배치 */

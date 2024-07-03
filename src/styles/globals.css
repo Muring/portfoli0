@@ -152,27 +152,32 @@ h1 {
     4vw,
     2rem
   ); /* 최소 2rem, 최대 5rem 사이에서 뷰포트 너비에 따라 조정 */
+  line-height: 1.2;
   font-family: "NanumSquareNeoHeavy";
 }
 
 h2 {
   font-size: clamp(1.5rem, 3vw, 1.75rem);
+  line-height: 1.2;
   font-family: "NanumSquareNeoExtraBold";
 }
 
 h3 {
   font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.2;
   font-family: "NanumSquareNeoBold";
 }
 
 h4 {
   font-size: clamp(1.25rem, 2.5vw, 1.25rem);
+  line-height: 1.2;
   font-family: "NanumSquareNeo";
 }
 
 p {
   font-size: 1rem; /* 일반 텍스트는 rem 단위로 설정하여 일관성 유지 */
-  font-family: "NanumSquareNeoLight";
+  line-height: 1.2;
+  font-family: "NanumSquareNeo";
 }
 
 @font-face {
