@@ -14,7 +14,9 @@ export default function Header() {
 
   return (
     <header
-      className={`${styles.header} ${animationTriggered ? styles.drop : ""}`}
+      className={`${styles.header} ${
+        animationTriggered ? styles.drop : styles.fadeOut
+      }`}
     >
       <Link href={`/`}>
         <Image src={"/logo.png"} width={75} height={75} alt="logo"></Image>

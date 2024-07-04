@@ -6,6 +6,7 @@
   min-width: 500px;
   height: auto;
   margin: 0 8vw;
+  transition: all 1s ease-out;
 }
 
 .info {
@@ -27,6 +28,8 @@
     width: 50%;
     height: 100%;
     min-width: 470px;
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-out 1.5s forwards;
 
     h1 {
       font-size: 4.5rem;
@@ -53,8 +56,10 @@
   .img {
     width: 48%;
     min-width: 470px;
+    opacity: 0;
     display: flex;
     align-items: center;
+    animation: slideInFromRight 1s ease-out 1.5s forwards;
 
     img {
       width: 90%;
@@ -69,8 +74,9 @@
   width: 80%;
   min-height: 60vw;
   padding: 10vw 5vw;
-  animation: fadeIn 1s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
+  animation: slideInFromBottom 2s ease-out 1.7s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
   transition: all 0.3s ease;
+  opacity: 0;
 }
 
 .project-container {
@@ -94,12 +100,35 @@
   }
 }
 
-// @media (min-width: 800px) {
-//   /* 화면 너비가 800px 이상일 때 3개씩 배치 */
-//   .project-container {
-//     grid-template-columns: repeat(3, 1fr);
-//     max-height: calc(
-//       (120vw / 3) - 20px
-//     ); /* 1행으로 3개의 박스를 보여줄 높이 설정 */
-//   }
-// }
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
