@@ -5,6 +5,7 @@ import { ProjectCardProps } from "@/interfaces/project.interface";
 
 export default function ProjectCard({ project, type }: ProjectCardProps) {
   const currentProject = project;
+  console.log(currentProject.id);
   return (
     <div className={styles.card}>
       <Link href={`/protfolio/${currentProject.id}`}>

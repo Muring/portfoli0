@@ -1,10 +1,8 @@
 import styles from "@/styles/portfolio.module.scss";
+import { useParams } from "next/navigation";
 
-export default function projectPage(id: number) {
-  return (
-    <div className={`${styles["main-container"]}`}>
-      <div className={styles.info}>projectPage{id}</div>
-      <div className={`${styles["project-container"]}`}></div>
-    </div>
-  );
+export default function Page() {
+  const params = useParams();
+  const { id } = params;
+  return <div>My Post: {id}</div>;
 }
