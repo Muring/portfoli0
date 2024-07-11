@@ -8,7 +8,7 @@ export default function ProjectCard({ project, type }: ProjectCardProps) {
   console.log(currentProject.id);
   return (
     <div className={styles.card}>
-      <Link href={`/protfolio/${currentProject.id}`}>
+      <Link href={`/portfolio/${currentProject.id}`}>
         <Image
           src={type === 0 ? project.bigImage : project.smallImage}
           width={400}

@@ -176,7 +176,7 @@ h4 {
 
 p {
   font-size: 1rem; /* 일반 텍스트는 rem 단위로 설정하여 일관성 유지 */
-  line-height: 1.2;
+  line-height: 1.5;
   font-family: "NanumSquareNeo";
 }
 

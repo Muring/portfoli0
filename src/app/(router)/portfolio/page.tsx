@@ -3,20 +3,20 @@ import Image from "next/image";
 import path from "path";
 import fs from "fs";
 import ProjectCard from "@/components/ProjectCard";
-import { Project } from "@/interfaces/project.interface";
+import { SimpleProject } from "@/interfaces/project.interface";
 
 export default function protfolioPage() {
   // JSON 파일 가져오기
   const filePath = path.join(process.cwd(), "public", "data", "portfolio.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
-  const projects: Project[] = JSON.parse(jsonData);
+  const projects: SimpleProject[] = JSON.parse(jsonData);
 
   return (
     <div className={styles["main-container"]}>
       <div className={styles.info}>
         <div className={styles.text}>
           <h1>Portfolio.</h1>
-          <h4>Check out some of my latest frontend project and studies.</h4>
+          <h3>Check out some of my latest frontend project and studies.</h3>
           <p>
             I've made projects with{" "}
             <span className={styles.highlight}>Next.js</span>,{" "}
