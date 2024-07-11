@@ -14,6 +14,18 @@ export default function Page({ params: { id } }: { params: { id: number } }) {
 
   return (
     <div className={styles["main-container"]}>
+      <div>
+        {id != 1 && (
+          <Link href={`/portfolio/${id - 1}`} className={styles.left}>
+            <p>&lt;</p>
+          </Link>
+        )}
+        {id != 4 && (
+          <Link href={`/portfolio/${Number(id) + 1}`} className={styles.right}>
+            <p>&gt;</p>
+          </Link>
+        )}
+      </div>
       <div className={styles.info}>
         <div className={styles.text}>
           <h1>{projects[id].name.toUpperCase()}.</h1>
@@ -23,7 +35,7 @@ export default function Page({ params: { id } }: { params: { id: number } }) {
             <span>{projects[id].memberCount}명</span>
           </p>
           <p className={styles.desc}>{projects[id].projectDescription}</p>
-          <div className={styles.git}>
+          <div className={styles.etc}>
             <Link href={projects[id].link}>
               <Image
                 src={"/images/logo/github-logo.png"}
@@ -33,6 +45,20 @@ export default function Page({ params: { id } }: { params: { id: number } }) {
               ></Image>
               <h4>Github link</h4>
             </Link>
+            <div className={styles["logo-container"]}>
+              {projects[id].skills.map((skill, index) => (
+                <div className={styles.logo}>
+                  <Image
+                    src={`/images/icon/${skill}.png`}
+                    width={100}
+                    height={100}
+                    alt={skill}
+                    key={index}
+                  ></Image>
+                  <p className={styles.arrow_box}>{skill}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className={styles.img}>

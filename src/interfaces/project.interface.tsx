@@ -20,6 +20,6 @@ export interface DetailProject {
   projectDescription: string;
   designDescription: string;
   myRole: string;
-  skills: string;
+  skills: string[];
   difficulties: string;
 }
