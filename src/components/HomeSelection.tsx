@@ -6,7 +6,7 @@ import { throttle } from "lodash";
 import Link from "next/link";
 
 export default function HomeSelection() {
-  const [hoverPosition, setHoverPosition] = useState<number | null>(null);
+  const [hoverPosition, setHoverPosition] = useState<number | null>(0.5);
   const [animationTriggered, setAnimationTriggered] = useState(false);
 
   useEffect(() => {
