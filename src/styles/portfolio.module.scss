@@ -14,10 +14,10 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: auto;
   padding: 4vw 8vw;
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* 아래쪽에만 그림자 효과 */
   gap: 20px;
+  margin-bottom: 4vw;
 
   .text {
     display: flex;
@@ -165,7 +165,8 @@
 .content {
   width: 100%;
   min-height: 60vw;
-  padding: 10vw 5vw;
+  height: auto;
+  padding: 0 5vw;
   animation: slideInFromBottom 2s ease-out 1.7s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
   transition: all 0.3s ease;
   opacity: 0;

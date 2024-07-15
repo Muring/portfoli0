@@ -6,10 +6,10 @@
     "summary": "본인의 건강에 소홀한 현대인들을 위한 건강 촉진 앱",
     "link": "https://github.com/Muring/Vita",
     "imgUrl": "",
-    "projectDescription": "사용자들이 건강을 체계적으로 관리하고, 개인의 라이프스타일에 맞춘 건강 분석 및 개선 계획을 제공하는 종합 건강 관리 플랫폼입니다. 이를 통해 사용자는 일상 속에서 건강한 생활 습관을 형성하고, 자기 건강 상태를 지속적으로 모니터링할 수 있습니다.",
+    "projectDescription": "사용자들이 건강을 체계적으로 관리하고, 개인의 라이프스타일에 맞춘 건강 분석 및 개선 계획을 제공하는 종합 건강 관리 플랫폼입니다. 이를 통해 사용자는 일상 속에서 건강한 생활 습관을 형성하고, 자신의 건강 상태를 지속적으로 모니터링할 수 있습니다.",
+    "skills": ["nextjs", "scss", "html", "figma", "pwa"],
     "designDescription": "string",
     "myRole": "string",
-    "skills": ["nextjs", "scss", "html", "figma", "pwa"],
     "difficulties": "string"
   },
   "2": {
@@ -19,9 +19,9 @@
     "summary": "모임 통장과 그룹원들의 소통 창구인 피드를 결합한 모두를 위한 모임 뱅킹",
     "link": "https://github.com/Muring/MOMO",
     "projectDescription": "사용자들이 모임별로 회비를 편리하게 관리하고, 모임의 성격에 따라 최적의 통장 및 카드를 추천받고 적용할 수 있는 모임 특화 금융 관리 플랫폼입니다. ",
+    "skills": ["nuxtjs", "scss", "html", "figma"],
     "designDescription": "string",
     "myRole": "string",
-    "skills": ["nuxtjs", "scss", "html", "figma"],
     "difficulties": "string"
   },
   "3": {
@@ -31,9 +31,9 @@
     "summary": "컴퓨터 공학 지식 학습을 위한 CS 퀴즈 웹 페이지",
     "link": "https://github.com/Muring/SEAS",
     "projectDescription": "포트폴리오, 코딩 테스트 공부 등 바쁜 신입 개발자들을 위한 간편한 CS 용어 공부 웹사이트로, 플래시카드를 통한 간단한 공부와 더불어 퀴즈를 통해 실력을 점검하고 레벨의 상승과 랭킹을 통해 스스로의 실력을 남들과 비교해볼 수 있습니다.",
+    "skills": ["vuejs", "scss", "html", "figma"],
     "designDescription": "string",
     "myRole": "string",
-    "skills": ["vuejs", "scss", "html", "figma"],
     "difficulties": "string"
   },
   "4": {
@@ -43,9 +43,9 @@
     "summary": "카카오 지도 API와 아파트 매매 실거래 자료 API를 활용한 부동산 웹 플랫폼",
     "link": "https://github.com/Muring/Ghiburi",
     "projectDescription": "국토교통부 아파트매매 실거래 정보와 카카오 지도를 활용한 부동산 플랫폼으로, 아파트의 정보와 로드뷰를 통한 실제 모습, 타 아파트와의 정보 비교를 통해 사용자가 원하는 집을 찾을 수 있습니다.",
+    "skills": ["vuejs", "scss", "html"],
     "designDescription": "string",
     "myRole": "string",
-    "skills": ["vuejs", "scss", "html"],
     "difficulties": "string"
   }
 }

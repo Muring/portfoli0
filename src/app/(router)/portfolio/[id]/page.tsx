@@ -61,7 +61,7 @@ export default function Page({ params: { id } }: { params: { id: number } }) {
             </div>
           </div>
         </div>
-        <div className={styles.img}>
+        <div className={styles["info-img"]}>
           <Image
             src={`/images/${projects[id].name}/card1-high.png`}
             width={800}
@@ -69,16 +69,6 @@ export default function Page({ params: { id } }: { params: { id: number } }) {
             alt="info"
           />
         </div>
-      </div>
-      <div className={styles.content}>
-        {/* 개요 */}
-        {/* 레이아웃(피그마) */}
-        {/* 디자인 설명 */}
-        {/* 내가 맡은 부분 */}
-        {/* 내가 사용한 기술 */}
-        {/* I've made projects with{" "}
-            <span className={styles.highlight}>Next.js</span>,{" "} */}
-        {/* 어려웠던 점 */}
       </div>
     </div>
   );
