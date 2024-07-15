@@ -29,7 +29,13 @@ export default function protfolioPage() {
           </p>
         </div>
         <div className={styles.img}>
-          <Image src={"/images/info.png"} width={600} height={600} alt="info" />
+          <Image
+            src={"/images/logo/info.png"}
+            width={600}
+            height={600}
+            quality={100}
+            alt="info"
+          />
         </div>
       </div>
       <div className={styles.content}>
