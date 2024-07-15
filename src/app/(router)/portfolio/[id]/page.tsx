@@ -5,7 +5,11 @@ import { DetailProject } from "@/interfaces/project.interface";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Page({ params: { id } }: { params: { id: number } }) {
+export default function ProjectDetailPage({
+  params: { id },
+}: {
+  params: { id: number };
+}) {
   // JSON 파일 가져오기
   const filePath = path.join(process.cwd(), "public", "data", "project.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
