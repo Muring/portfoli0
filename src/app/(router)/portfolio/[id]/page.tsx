@@ -1,9 +1,9 @@
 import styles from "@/styles/portfolio.module.scss";
 import path from "path";
 import fs from "fs";
-import { DetailProject } from "@/interfaces/project.interface";
 import Image from "next/image";
 import Link from "next/link";
+import { DetailProject } from "@/interfaces/project.interface";
 
 export default function ProjectDetailPage({
   params: { id },

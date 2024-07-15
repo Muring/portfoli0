@@ -1,0 +1,10 @@
+{
+  "name": "about",
+  "shortDescription": "짧은 설명",
+  "longDescription": "긴 설명",
+  "gitLink": "https://github.com/Muring",
+  "blogLink": "https://muring.vercel.app",
+  "imgUrl": "/images/profile/profile-standing.png",
+  "skills": ["nextjs", "scss", "html", "figma", "pwa"],
+  "myRole": "string"
+}
