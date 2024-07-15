@@ -19,7 +19,12 @@ export default function Header() {
       }`}
     >
       <Link href={`/`}>
-        <Image src={"/logo.png"} width={75} height={75} alt="logo"></Image>
+        <Image
+          src={"/images/icon/main-icon.png"}
+          width={75}
+          height={75}
+          alt="logo"
+        ></Image>
       </Link>
       <nav>
         <ul className={styles.menu}>
