@@ -41,9 +41,7 @@ export default function Footer() {
           </li>
         </ul>
       </nav>
-      <Link href={"#top"} className={styles.top}>
-        back to top
-      </Link>
+      <Link href={"#top"} className={styles.top}></Link>
     </footer>
   );
 }

@@ -49,11 +49,11 @@
   position: absolute;
   left: 50%;
   margin-left: -59px;
-  bottom: 50px;
-  text-indent: -9999px;
+  bottom: 8vh;
+  content: "";
 
   &:hover {
-    bottom: 60px;
+    bottom: 9vh;
     transition: all 0.3s ease;
   }
 }
