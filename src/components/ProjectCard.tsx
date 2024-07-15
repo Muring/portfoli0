@@ -11,8 +11,8 @@ export default function ProjectCard({ project, type }: ProjectCardProps) {
       <Link href={`/portfolio/${currentProject.id}`}>
         <Image
           src={type === 0 ? project.bigImage : project.smallImage}
-          width={400}
-          height={400}
+          width={800}
+          height={800}
           alt="project image"
         ></Image>
         <div className={styles.description}>

@@ -71,8 +71,8 @@
       transition: all 0.3s ease;
     }
 
-    @media (min-width: 550px) {
-      /* 화면 너비가 500px 이상일 때 2개씩 배치 */
+    @media (min-width: 800px) {
+      /* 화면 너비가 550px 이상일 때 투명도 1 */
       p {
         opacity: 1;
       }

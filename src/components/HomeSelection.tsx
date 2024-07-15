@@ -50,7 +50,7 @@ export default function HomeSelection() {
       >
         <div className={`${styles.description}  ${styles["left-description"]}`}>
           <h1>About me</h1>
-          <p>Personality, Skills, Experience</p>
+          <p className={styles.vanish}>Personality, Skills, Experience</p>
         </div>
       </Link>
 
@@ -65,7 +65,7 @@ export default function HomeSelection() {
           className={`${styles.description}  ${styles["right-description"]}`}
         >
           <h1>Projects</h1>
-          <p>Projects made with Vue & React</p>
+          <p className={styles.vanish}>Projects made with Vue & React</p>
         </div>
       </Link>
     </div>

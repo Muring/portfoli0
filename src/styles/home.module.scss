@@ -7,7 +7,8 @@
   .recent {
     display: flex;
     flex-direction: column;
-    padding: 10vw 5vw;
+    margin: 6vw 0;
+    padding: 6vw 5vw;
     opacity: 0;
     animation: fadeIn 1s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
     transition: all 0.3s ease;
@@ -35,10 +36,10 @@
     .card-container {
       display: grid;
       align-items: center;
-      gap: 2vw;
+      gap: 1.5vw;
       grid-auto-rows: 1fr;
       overflow: hidden; /* 초과 요소 숨기기 */
-      padding: 4vh 1vw;
+      padding: 2vh 1vw;
       transition: 0.3s;
 
       /* 기본적으로 1개씩 배치 */
@@ -48,17 +49,17 @@
       ); /* 3개의 박스를 보여줄 높이 설정 */
     }
 
-    @media (min-width: 500px) {
+    @media (min-width: 700px) {
       /* 화면 너비가 500px 이상일 때 2개씩 배치 */
       .card-container {
         grid-template-columns: repeat(2, 1fr);
         max-height: calc(
-          (70vw / 2) - 20px
+          (82vw / 2) - 20px
         ); /* 1행으로 2개의 박스만 보여줄 높이 설정 */
       }
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 1030px) {
       /* 화면 너비가 800px 이상일 때 3개씩 배치 */
       .card-container {
         grid-template-columns: repeat(3, 1fr);

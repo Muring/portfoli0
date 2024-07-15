@@ -28,7 +28,7 @@ export default function protfolioPage() {
             backend developers.
           </p>
         </div>
-        <div className={styles.img}>
+        <div className={styles["info-img"]}>
           <Image
             src={"/images/logo/info.png"}
             width={600}
