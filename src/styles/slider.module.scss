@@ -5,6 +5,7 @@
   max-height: 80vw;
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2); /* 아래쪽에만 그림자 효과 */
   transition: all 0.3s ease;
+  min-width: 500px;
 
   .box {
     position: relative; /* 자식 가상 요소들이 부모를 기준으로 위치하도록 설정 */
@@ -22,11 +23,11 @@
       content: "";
       position: absolute;
       top: 0;
-      left: 0;
+      left: 60%;
       background-image: url("/images/profile/profile-standing.");
       background-size: auto 100%; /* 배경 이미지를 박스 크기에 맞게 조정 */
       background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
-      background-position: right top; /* 배경 이미지를 중앙에 위치시킴 */
+      background-position: left top; /* 배경 이미지를 중앙에 위치시킴 */
       background-attachment: fixed; /* 배경 이미지 고정 */
     }
   }
@@ -42,7 +43,7 @@
     top: 0;
     right: 0;
     background-image: url("/images/home/project.png");
-    background-size: 80vw 110%; /* 배경 이미지를 박스 크기에 맞게 조정 */
+    background-size: max(80vw, 500px) 110%; /* 배경 이미지를 박스 크기에 맞게 조정 */
     background-repeat: no-repeat; /* 배경 이미지가 반복되지 않도록 설정 */
     background-position: right top; /* 배경 이미지를 중앙에 위치시킴 */
     background-attachment: fixed; /* 배경 이미지 고정 */
