@@ -67,7 +67,7 @@ export default function ProjectDetailPage({
         </div>
         <div className={styles["info-img"]}>
           <Image
-            src={`/images/${projects[id].name}/card1-high.png`}
+            src={`/images/${projects[id].name}/card1-ultra.png`}
             width={800}
             height={800}
             alt="info"

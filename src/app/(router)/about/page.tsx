@@ -68,7 +68,11 @@ export default function AboutPage() {
           />
         </div>
       </div>
-      <div className={styles.content}></div>
+      <div className={styles.content}>
+        {/* 개발 역량 */}
+        {/* 스킬 및 숙련도 */}
+        {/* 진짜 나(취미, 관심사) */}
+      </div>
     </div>
   );
 }
