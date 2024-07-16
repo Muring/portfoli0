@@ -70,6 +70,33 @@ export default function AboutPage() {
       </div>
       <div className={styles.content}>
         {/* 개발 역량 */}
+        <div className={dStyle.capability}>
+          <div className={dStyle["fb-graph"]}>
+            <div className={dStyle["side-desc"]}>
+              <h2>Backend</h2>
+              <p>Java</p>
+              <p>Spring</p>
+              <p>Spring Boot</p>
+              <p>MVC Pattern</p>
+            </div>
+            <Image
+              src={`/images/capability-graph.png`}
+              width={400}
+              height={400}
+              quality={100}
+              alt="capability"
+            />
+            <div className={dStyle["side-desc"]}>
+              <h2>Frontend</h2>
+              <p>Vue & Nuxt.js</p>
+              <p>React & Next.js</p>
+              <p>JS & TS</p>
+              <p>Figma</p>
+            </div>
+          </div>
+          <div className={dStyle.overall}></div>
+        </div>
+
         {/* 스킬 및 숙련도 */}
         {/* 진짜 나(취미, 관심사) */}
       </div>

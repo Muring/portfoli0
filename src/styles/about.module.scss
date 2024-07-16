@@ -6,3 +6,25 @@
 .profile-img {
   opacity: 0.05 !important;
 }
+
+.capability {
+  margin-top: 5%;
+
+  img {
+    width: 400px !important;
+  }
+
+  .fb-graph {
+    display: flex;
+    justify-content: space-evenly;
+    .side-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .overall {
+  }
+}
