@@ -5,13 +5,24 @@ import fs from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import { myData } from "@/interfaces/about.interface";
+import dynamic from "next/dynamic";
 
 export default function AboutPage() {
   // JSON 파일 가져오기
   const filePath = path.join(process.cwd(), "public", "data", "about.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
   const data: myData = JSON.parse(jsonData);
-  console.log(data);
+
+  const CapabilityComponent = dynamic(
+    () => import("@/components/CapabilityComponent"),
+    {
+      loading: () => <p>Loading...</p>,
+    }
+  );
+
+  const SkillComponent = dynamic(() => import("@/components/SkillComponent"), {
+    loading: () => <p>Loading...</p>,
+  });
 
   return (
     <div className={styles["main-container"]}>
@@ -19,10 +30,6 @@ export default function AboutPage() {
         <div className={styles.text}>
           <h1>{data.name.toUpperCase()}.</h1>
           <h3>{data.shortDescription}</h3>
-          {/* <p className={styles.between}>
-            {data.date}
-            <span>{data.memberCount}명</span>
-          </p> */}
           <p className={styles.desc}>{data.longDescription}</p>
           <div className={`${styles.etc} ${dStyles["justify-left"]}`}>
             <Link href={data.gitLink}>
@@ -70,95 +77,11 @@ export default function AboutPage() {
       </div>
       <div className={dStyles.content}>
         {/* 개발 역량 */}
-        <div className={dStyles.description}>
-          <div className={dStyles["fb-graph"]}>
-            <div className={dStyles["side-desc"]}>
-              <h2>Backend</h2>
-              <p>Java</p>
-              <p>Spring</p>
-              <p>Spring Boot</p>
-              <p>MVC Pattern</p>
-            </div>
-            <Image
-              src={`/images/capability-graph.png`}
-              width={400}
-              height={400}
-              quality={100}
-              alt="capability"
-            />
-            <div className={dStyles["side-desc"]}>
-              <h2>Frontend</h2>
-              <p>Vue & Nuxt.js</p>
-              <p>React & Next.js</p>
-              <p>JS & TS</p>
-              <p>Figma</p>
-            </div>
-          </div>
-          <div className={dStyles.overall}></div>
-        </div>
+        <CapabilityComponent />
 
         {/* 스킬 및 숙련도 */}
-        <div className={dStyles.description}>
-          <h3>Skills</h3>
-          <ul className={dStyles.legend}>
-            <li>
-              <p>Lv1</p>
-              <p>간단한 작성 및 편집 가능</p>
-            </li>
-            <li>
-              <p>Lv2</p>
-              <p>인터페이스 구축, 반응형 웹 및 컴포넌트화 가능</p>
-            </li>
-            <li>
-              <p>Lv3</p>
-              <p>비동기 및 각종 라이브러리 활용 가능</p>
-            </li>
-            <li>
-              <p>Lv4</p>
-              <p>최적화 가능</p>
-            </li>
-            <li>
-              <p>Lv5</p>
-              <p>보안성 강화 가능</p>
-            </li>
-          </ul>
-          <div className={dStyles["chart-container"]}>
-            <ul className={dStyles.label}>
-              <li>
-                <h4>React & Next.js</h4>
-              </li>
-              <li>
-                <h4>Vue & Nuxt.js</h4>
-              </li>
-              <li>
-                <h4>Figma</h4>
-              </li>
-              <li>
-                <h4>Javascript</h4>
-              </li>
-              <li>
-                <h4>Typescript</h4>
-              </li>
-            </ul>
-            <ul className={dStyles["bar-chart"]}>
-              <li className={dStyles["black-80"]}>
-                <h2>Lv4</h2>
-              </li>
-              <li className={dStyles["green-80"]}>
-                <h2>Lv4</h2>
-              </li>
-              <li className={dStyles["red-40"]}>
-                <h2>Lv2</h2>
-              </li>
-              <li className={dStyles["yellow-60"]}>
-                <h2>Lv3</h2>
-              </li>
-              <li className={dStyles["blue-60"]}>
-                <h2>Lv3</h2>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <SkillComponent />
+
         {/* 진짜 나(취미, 관심사) */}
         <div className={dStyles.description}>
           <h4>Humble me</h4>
