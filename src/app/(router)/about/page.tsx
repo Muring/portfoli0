@@ -1,5 +1,5 @@
 import styles from "@/styles/portfolio.module.scss";
-import dStyle from "@/styles/about.module.scss";
+import dStyles from "@/styles/about.module.scss";
 import path from "path";
 import fs from "fs";
 import Image from "next/image";
@@ -24,7 +24,7 @@ export default function AboutPage() {
             <span>{data.memberCount}명</span>
           </p> */}
           <p className={styles.desc}>{data.longDescription}</p>
-          <div className={`${styles.etc} ${dStyle["justify-left"]}`}>
+          <div className={`${styles.etc} ${dStyles["justify-left"]}`}>
             <Link href={data.gitLink}>
               <Image
                 src={"/images/icon/git-icon.png"}
@@ -59,7 +59,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-        <div className={`${styles["info-img"]} ${dStyle["profile-img"]}`}>
+        <div className={`${styles["info-img"]} ${dStyles["profile-img"]}`}>
           <Image
             src={`/images/profile/profile-half.png`}
             width={800}
@@ -68,11 +68,11 @@ export default function AboutPage() {
           />
         </div>
       </div>
-      <div className={styles.content}>
+      <div className={dStyles.content}>
         {/* 개발 역량 */}
-        <div className={dStyle.capability}>
-          <div className={dStyle["fb-graph"]}>
-            <div className={dStyle["side-desc"]}>
+        <div className={dStyles.description}>
+          <div className={dStyles["fb-graph"]}>
+            <div className={dStyles["side-desc"]}>
               <h2>Backend</h2>
               <p>Java</p>
               <p>Spring</p>
@@ -86,7 +86,7 @@ export default function AboutPage() {
               quality={100}
               alt="capability"
             />
-            <div className={dStyle["side-desc"]}>
+            <div className={dStyles["side-desc"]}>
               <h2>Frontend</h2>
               <p>Vue & Nuxt.js</p>
               <p>React & Next.js</p>
@@ -94,11 +94,75 @@ export default function AboutPage() {
               <p>Figma</p>
             </div>
           </div>
-          <div className={dStyle.overall}></div>
+          <div className={dStyles.overall}></div>
         </div>
 
         {/* 스킬 및 숙련도 */}
+        <div className={dStyles.description}>
+          <h3>Skills</h3>
+          <ul className={dStyles.legend}>
+            <li>
+              <p>Lv1</p>
+              <p>간단한 작성 및 편집 가능</p>
+            </li>
+            <li>
+              <p>Lv2</p>
+              <p>인터페이스 구축, 반응형 웹 및 컴포넌트화 가능</p>
+            </li>
+            <li>
+              <p>Lv3</p>
+              <p>비동기 및 각종 라이브러리 활용 가능</p>
+            </li>
+            <li>
+              <p>Lv4</p>
+              <p>최적화 가능</p>
+            </li>
+            <li>
+              <p>Lv5</p>
+              <p>보안성 강화 가능</p>
+            </li>
+          </ul>
+          <div className={dStyles["chart-container"]}>
+            <ul className={dStyles.label}>
+              <li>
+                <h4>React & Next.js</h4>
+              </li>
+              <li>
+                <h4>Vue & Nuxt.js</h4>
+              </li>
+              <li>
+                <h4>Figma</h4>
+              </li>
+              <li>
+                <h4>Javascript</h4>
+              </li>
+              <li>
+                <h4>Typescript</h4>
+              </li>
+            </ul>
+            <ul className={dStyles["bar-chart"]}>
+              <li className={dStyles["black-80"]}>
+                <h2>Lv4</h2>
+              </li>
+              <li className={dStyles["green-80"]}>
+                <h2>Lv4</h2>
+              </li>
+              <li className={dStyles["red-40"]}>
+                <h2>Lv2</h2>
+              </li>
+              <li className={dStyles["yellow-60"]}>
+                <h2>Lv3</h2>
+              </li>
+              <li className={dStyles["blue-60"]}>
+                <h2>Lv3</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
         {/* 진짜 나(취미, 관심사) */}
+        <div className={dStyles.description}>
+          <h4>Humble me</h4>
+        </div>
       </div>
     </div>
   );
