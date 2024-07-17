@@ -7,8 +7,8 @@
   .recent {
     display: flex;
     flex-direction: column;
-    margin: 6vw 0;
-    padding: 6vw 5vw;
+    margin: 40px 0;
+    padding: 4%;
     opacity: 0;
     animation: fadeIn 1s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
     transition: all 0.3s ease;
@@ -26,7 +26,7 @@
       }
 
       .title {
-        margin: 0 20px;
+        margin: 20px;
         font-weight: bold;
         color: #777;
         white-space: nowrap; /* 텍스트 줄바꿈 방지 */

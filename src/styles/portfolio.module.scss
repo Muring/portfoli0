@@ -171,7 +171,7 @@
   width: 100%;
   min-height: 60vw;
   height: auto;
-  padding: 0 5vw 20vh 5vw;
+  padding: 0 10% 20% 10%;
   animation: slideInFromBottom 2s ease-out 1.7s forwards; /* 1초 동안 점차 불투명해지는 애니메이션 */
   transition: all 0.3s ease;
   opacity: 0;
@@ -180,13 +180,12 @@
 
 .project-container {
   display: grid;
-  gap: 2vw;
+  gap: 40px;
   grid-auto-rows: 1fr;
-  padding: 2vh 1vw;
+  padding: 10% 5%;
   transition: 0.3s;
   /* 기본적으로 1개씩 배치 */
   grid-template-columns: 1fr;
-  max-height: calc(3 * (100vw - 20px) / 1); /* 3개의 박스를 보여줄 높이 설정 */
 }
 
 @media (min-width: 800px) {

@@ -11,9 +11,7 @@ export default function Footer() {
     setAnimationTriggered(true);
   }, []);
   return (
-    <footer
-      className={`${styles.footer} ${animationTriggered ? styles.pop : ""}`}
-    >
+    <footer className={styles.footer}>
       <Link href={"/"} className={styles.info}>
         <p>&copy;2024 Eom SeHyeon</p>
       </Link>
