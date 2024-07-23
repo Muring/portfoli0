@@ -42,7 +42,7 @@ export default function ProjectDetailPage({
           <div className={styles.etc}>
             <Link href={projects[id].link}>
               <Image
-                src={"/images/logo/github-logo.png"}
+                src={"/images/icon/git-icon.png"}
                 width={100}
                 height={100}
                 alt="git"
