@@ -38,10 +38,10 @@ export default function SkillComponent() {
             <h4>Figma</h4>
           </li>
           <li>
-            <h4>Javascript</h4>
+            <h4>Java Script</h4>
           </li>
           <li>
-            <h4>Typescript</h4>
+            <h4>Type Script</h4>
           </li>
         </ul>
         <ul className={styles["bar-chart"]}>

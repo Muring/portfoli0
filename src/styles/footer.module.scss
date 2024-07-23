@@ -36,6 +36,16 @@
     gap: 2vw;
   }
 }
+@media (max-width: 500px) {
+  /* 화면 너비가 500px 이하일 때 갭 바꾸기 */
+  .menu {
+    display: none;
+  }
+
+  .footer {
+    justify-content: center;
+  }
+}
 
 .top {
   background: transparent

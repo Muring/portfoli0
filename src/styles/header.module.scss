@@ -33,6 +33,28 @@
     opacity: 50%;
     transition: all 0.3s ease;
   }
+
+  @media (max-width: 500px) {
+    /* 화면 너비가 500px 이하일 때 갭 바꾸기 */
+    img {
+      width: 50px;
+      height: auto;
+    }
+
+    .menu {
+      gap: 2vw;
+      transition: all 0.3s ease;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+    }
+  }
+
+  a:hover {
+    opacity: 50%;
+    transition: all 0.3s ease;
+  }
 }
 
 .fade-out {

@@ -39,7 +39,7 @@ export default function AboutPage() {
                 height={100}
                 alt="git"
               ></Image>
-              <h4>Github link</h4>
+              <h4>Github</h4>
             </Link>
             <Link href={data.gitLink}>
               <Image
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 height={100}
                 alt="git"
               ></Image>
-              <h4>Blog link</h4>
+              <h4>Blog</h4>
             </Link>
           </div>
           <div className={styles["logo-container"]}>
@@ -66,7 +66,7 @@ export default function AboutPage() {
             ))}
           </div>
         </div>
-        <div className={`${styles["info-img"]} ${dStyles["profile-img"]}`}>
+        <div className={`${styles["info-img"]}`}>
           <Image
             src={`/images/profile/profile-half.png`}
             width={800}

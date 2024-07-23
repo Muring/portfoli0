@@ -46,7 +46,7 @@ export default function ProjectDetailPage({
                 height={100}
                 alt="git"
               ></Image>
-              <h4>Github link</h4>
+              <h4>Github</h4>
             </Link>
             <div className={styles["logo-container"]}>
               {projects[id].skills.map((skill, index) => (
