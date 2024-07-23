@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { myData } from "@/interfaces/about.interface";
 import dynamic from "next/dynamic";
+import FilpCardComponent from "@/components/FlipCardComponent";
 
 export default function AboutPage() {
   // JSON 파일 가져오기
@@ -84,7 +85,14 @@ export default function AboutPage() {
 
         {/* 진짜 나(취미, 관심사) */}
         <div className={dStyles.description}>
-          <h4>Humble me</h4>
+          <h2>I like</h2>
+          <div className={dStyles["like-card-container"]}>
+            <FilpCardComponent like="games" />
+            <FilpCardComponent like="movies" />
+            <FilpCardComponent like="novels" />
+            <FilpCardComponent like="animes" />
+            <FilpCardComponent like="coding" />
+          </div>
         </div>
       </div>
     </div>

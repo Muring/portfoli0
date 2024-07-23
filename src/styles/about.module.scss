@@ -151,3 +151,11 @@
     rgba(106, 142, 183, 0.8)
   );
 }
+
+/* ------------------ 좋아요 카드 ------------------ */
+.like-card-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 3% 0;
+}
