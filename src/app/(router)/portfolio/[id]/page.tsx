@@ -14,7 +14,6 @@ export default function ProjectDetailPage({
   const filePath = path.join(process.cwd(), "public", "data", "project.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
   const projects: DetailProject[] = JSON.parse(jsonData);
-  console.log(projects[id]);
 
   return (
     <div className={styles["main-container"]}>
