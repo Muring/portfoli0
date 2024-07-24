@@ -17,5 +17,7 @@
     "nextjs",
     "figma"
   ],
-  "myRole": "string"
+  "likes": ["game", "movie", "anime", "novel & webtoon"],
+  "awards": ["대상, 대한전기학회 대학작품경진대회, 2022.07"],
+  "educations": ["삼성청년 소프트웨어 아카데미 SSAFY (2023.07 ~ 2024.06)"]
 }

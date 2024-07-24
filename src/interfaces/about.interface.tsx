@@ -6,7 +6,7 @@ export interface myData {
   blogLink: string;
   imgUrl: string;
   skills: string[];
-  myRole: string;
+  likes: string[];
   awards: string[];
   educations: string[];
 }

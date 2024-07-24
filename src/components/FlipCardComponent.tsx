@@ -13,9 +13,21 @@ export default function FilpCardComponent({ like }: any) {
             alt="git"
           ></Image>
         </div>
-        <div className={styles["flip-card-back"]}>
-          <h1>{like}</h1>
-          <p>Some text here</p>
+        <div className={`${styles["flip-card-back"]} ${styles[like]}`}>
+          <Image
+            src={`/images/card/${like}.jpg`}
+            width={200}
+            height={200}
+            alt={like}
+          ></Image>
+          <h1>
+            {like.split(" ").map((e: string) => (
+              <div>
+                {e}
+                <br />
+              </div>
+            ))}
+          </h1>
         </div>
       </div>
     </div>

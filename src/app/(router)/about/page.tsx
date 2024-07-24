@@ -30,8 +30,8 @@ export default function AboutPage() {
       <div className={styles.info}>
         <div className={styles.text}>
           <h1>{data.name.toUpperCase()}.</h1>
-          <h3>{data.shortDescription}</h3>
-          <p className={styles.desc}>{data.longDescription}</p>
+          <h2>{data.shortDescription}</h2>
+          <h4 className={styles.desc}>{data.longDescription}</h4>
           <div className={`${styles.etc} ${dStyles["justify-left"]}`}>
             <Link href={data.gitLink}>
               <Image
@@ -66,6 +66,16 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
+          <div className={styles.educations}>
+            {data.educations.map((education) => (
+              <p>{education}</p>
+            ))}
+          </div>
+          <div className={styles.awards}>
+            {data.awards.map((award) => (
+              <p>{award}</p>
+            ))}
+          </div>
         </div>
         <div className={`${styles["info-img"]}`}>
           <Image
@@ -87,11 +97,9 @@ export default function AboutPage() {
         <div className={dStyles.description}>
           <h2>I like</h2>
           <div className={dStyles["like-card-container"]}>
-            <FilpCardComponent like="games" />
-            <FilpCardComponent like="movies" />
-            <FilpCardComponent like="novels" />
-            <FilpCardComponent like="animes" />
-            <FilpCardComponent like="coding" />
+            {data.likes.map((like) => (
+              <FilpCardComponent like={like} />
+            ))}
           </div>
         </div>
       </div>
