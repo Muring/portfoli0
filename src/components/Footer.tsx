@@ -32,11 +32,6 @@ export default function Footer() {
               <p>blog</p>
             </Link>
           </li>
-          <li>
-            <Link href={"/contact"}>
-              <p>contact</p>
-            </Link>
-          </li>
         </ul>
       </nav>
       <Link href={"#top"} className={styles.top}></Link>

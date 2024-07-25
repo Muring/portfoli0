@@ -94,7 +94,7 @@ export default function AboutPage() {
         <SkillComponent />
 
         {/* 진짜 나(취미, 관심사) */}
-        <div className={dStyles.description}>
+        <div className={`${dStyles.description} ${dStyles["no-shadow"]}`}>
           <h2>I like</h2>
           <div className={dStyles["like-card-container"]}>
             {data.likes.map((like) => (

@@ -43,11 +43,6 @@ export default function Header() {
               <h4>blog</h4>
             </Link>
           </li>
-          <li>
-            <Link href={"/contact"}>
-              <h4>contact</h4>
-            </Link>
-          </li>
         </ul>
       </nav>
     </header>
