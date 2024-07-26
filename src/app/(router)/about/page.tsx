@@ -18,11 +18,13 @@ export default function AboutPage() {
     () => import("@/components/CapabilityComponent"),
     {
       loading: () => <p>Loading...</p>,
+      ssr: false,
     }
   );
 
   const SkillComponent = dynamic(() => import("@/components/SkillComponent"), {
     loading: () => <p>Loading...</p>,
+    ssr: false,
   });
 
   return (

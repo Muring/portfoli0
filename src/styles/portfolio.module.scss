@@ -57,26 +57,6 @@
     }
   }
 
-  @media (max-width: 1210px) {
-    /* 화면 너비가 500px 이하일 때 사라지게 */
-    .info {
-      flex-direction: column;
-    }
-    .text {
-      width: 80%;
-    }
-  }
-
-  @media (max-width: 800px) {
-    /* 화면 너비가 500px 이하일 때 사라지게 */
-    .info {
-      flex-direction: column;
-    }
-    .text {
-      width: 100%;
-    }
-  }
-
   .info-img {
     position: relative;
     width: 48%;
@@ -95,6 +75,34 @@
       margin: 10%;
       object-fit: fit;
       border-radius: 10px;
+    }
+  }
+
+  @media (max-width: 1210px) {
+    /* 화면 너비가 500px 이하일 때 사라지게 */
+    .info {
+      flex-direction: column;
+    }
+    .text {
+      width: 80%;
+    }
+
+    .info-img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    /* 화면 너비가 500px 이하일 때 사라지게 */
+    .info {
+      flex-direction: column;
+    }
+    .text {
+      width: 100%;
+    }
+
+    .info-img {
+      width: 100%;
     }
   }
 
