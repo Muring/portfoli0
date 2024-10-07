@@ -45,10 +45,10 @@ export default function SkillComponent() {
           </li>
         </ul>
         <ul className={styles["bar-chart"]}>
-          <li className={styles["black-80"]}>
+          <li className={styles["black-60"]}>
             <h2>Lv4</h2>
           </li>
-          <li className={styles["green-80"]}>
+          <li className={styles["green-60"]}>
             <h2>Lv4</h2>
           </li>
           <li className={styles["red-40"]}>
